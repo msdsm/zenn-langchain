@@ -83,3 +83,13 @@ chain = setup_and_retrieval | prompt | model | output_parser
   - https://book.st-hakky.com/data-science/langchain-lcel/
   - https://zenn.dev/os1ma/articles/acd3472c3a6755
   - https://qiita.com/hiromitsu_iwasaki/items/7d471ba05b0ecc582489
+
+
+### LangSmith
+- LangChain社のLLMOpsツール
+- GUIで様々な機能がある
+  - 実行トレース管理機能
+  - データセット管理機能
+  - アノテーション機能
+- 参考
+  - https://tech-blog.abeja.asia/entry/langsmith-202402

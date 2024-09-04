@@ -101,3 +101,5 @@ chain = setup_and_retrieval | prompt | model | output_parser
 - 参考
   - https://qiita.com/isanakamishiro2/items/fe6e80ee5860837c2987
   - https://book.st-hakky.com/data-science/langchain-langserve/
+
+### LangGraph

@@ -93,3 +93,11 @@ chain = setup_and_retrieval | prompt | model | output_parser
   - アノテーション機能
 - 参考
   - https://tech-blog.abeja.asia/entry/langsmith-202402
+
+### LangServe
+- LCELで作成したチェーンやエージェントをサーバーにデプロイできるパッケージ
+- ソースコード(10/server.py, 10/client.py)参考
+  - FastAPIを使用しているので`python server.py`実行後にlocalhost:8000/docsでswaggerUI見れる
+- 参考
+  - https://qiita.com/isanakamishiro2/items/fe6e80ee5860837c2987
+  - https://book.st-hakky.com/data-science/langchain-langserve/

@@ -156,3 +156,6 @@ chain = setup_and_retrieval | prompt | model | output_parser
   - LLMs : 16/language-model/llm.py
   - Chat models : 16/language-model/chatmodel.py
 #### Output parsers
+- Output Parserの例として以下実装
+  - List parser : 16/output-parser/list-parser.py
+  - Pydantic(JSON) parser : 16/output-parser/pydantic-parser.py

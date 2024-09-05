@@ -4,40 +4,40 @@
 - https://zenn.dev/umi_mori/books/prompt-engineer
 
 ## 内容
-1 : はじめに
-2 : プロンプトエンジニアとは
-3 : プロンプトエンジニアの必須スキル5選
-4 : プロンプトデザイン入門
-5 : LangChainの概要と使い方
-6 : LangChainのインストール方法(python)
-7 : LangChainのインストール方法(js, ts)
-8 : LCEL(LangChain Expression Language)の概要と使い方
-9 : LangSmithの概要と使い方(LLMOps)
-10 : LangServeの概要と使い方(API)
-11 : LangGraphの概要と使い方(Multi-Actor)
-12 : OpenGPTsの概要と使い方
-13 : LangChain Evaluations
-14 : LangChain Hub
-15 : OpenAI Evalsとは
-16 : LangChain Model I/Oとは
-17 : LangChain Retrievalとは
-18 : LangChain Chainsとは
-19 : LangChain Memoryとは
-20 : LangChain Agentsとは
-21 : LangChain Callbacksとは
-22 : ChatGPTのウェブアプリ開発入門
-23 : LangChainによる「YouTube動画を学習させる方法」
-24 : LangChainによる「特定のウェブページを学習させる方法」
-25 : LangChainによる「特定のPDFを学習させる方法」
-26 : LangChainによる「GitHubリポジトリを学習させる方法」
-27 : LangChainによる「演算機能を学習させる方法」
-28 : LangChainによる「ウェブ検索機能を搭載する方法(Google API)」
-29 : LangChainによる「ウェブ検索機能を搭載する方法(Bing API)」
-30 : LangChainによる「ウェブ検索機能を搭載する方法(DuckDuckGo API)」
-31 : LangChainによる「Pandasのデータフレームを操作する方法」
-32 : LangChainによる「SQL操作をする方法」
-33 : LangChainによる「文献参照をする方法」
-34 : 最後に
+- 1 : はじめに
+- 2 : プロンプトエンジニアとは
+- 3 : プロンプトエンジニアの必須スキル5選
+- 4 : プロンプトデザイン入門
+- 5 : LangChainの概要と使い方
+- 6 : LangChainのインストール方法(python)
+- 7 : LangChainのインストール方法(js, ts)
+- 8 : LCEL(LangChain Expression Language)の概要と使い方
+- 9 : LangSmithの概要と使い方(LLMOps)
+- 10 : LangServeの概要と使い方(API)
+- 11 : LangGraphの概要と使い方(Multi-Actor)
+- 12 : OpenGPTsの概要と使い方
+- 13 : LangChain Evaluations
+- 14 : LangChain Hub
+- 15 : OpenAI Evalsとは
+- 16 : LangChain Model I/Oとは
+- 17 : LangChain Retrievalとは
+- 18 : LangChain Chainsとは
+- 19 : LangChain Memoryとは
+- 20 : LangChain Agentsとは
+- 21 : LangChain Callbacksとは
+- 22 : ChatGPTのウェブアプリ開発入門
+- 23 : LangChainによる「YouTube動画を学習させる方法」
+- 24 : LangChainによる「特定のウェブページを学習させる方法」
+- 25 : LangChainによる「特定のPDFを学習させる方法」
+- 26 : LangChainによる「GitHubリポジトリを学習させる方法」
+- 27 : LangChainによる「演算機能を学習させる方法」
+- 28 : LangChainによる「ウェブ検索機能を搭載する方法(Google API)」
+- 29 : LangChainによる「ウェブ検索機能を搭載する方法(Bing API)」
+- 30 : LangChainによる「ウェブ検索機能を搭載する方法(DuckDuckGo API)」
+- 31 : LangChainによる「Pandasのデータフレームを操作する方法」
+- 32 : LangChainによる「SQL操作をする方法」
+- 33 : LangChainによる「文献参照をする方法」
+- 34 : 最後に
 
 
 ## 構成

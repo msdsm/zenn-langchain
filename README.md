@@ -44,6 +44,26 @@
 - 05
   - langchain-main.py : LangChain使用
   - anthropic-main.py : anthropic使用
+- 10
+  - server.py : LangServeを使用したServer
+  - client.py : Client
+- 11
+  - main.py : LangGraph
+- 16
+  - prompt : Promptsの例
+    - template
+      - prompt.py
+      - fewshotprompt.py
+      - chatprompt.py
+    - example-selector
+      - main.py
+  - language-model : Language Modelsの例
+    - llm.py
+    - chatmodel.py
+  - output-parser : Output Parserの例
+    - list-parser.py
+    - pydantic-parser.py
+    - auto-fixing-parser.py
 
 ## メモ
 

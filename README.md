@@ -126,3 +126,8 @@ chain = setup_and_retrieval | prompt | model | output_parser
 - prompt template, Chain, Agentなどが上げられている
   - https://smith.langchain.com/hub
 - pathを指定することで自由にloadして使用可能
+
+### OpenAI Evals
+- OpenAI社が提供するLLMコンポーネントの評価フレームワーク
+- https://github.com/openai/evals
+- https://qiita.com/Akifumi_Nakamura/items/f51abb811ec367440da9

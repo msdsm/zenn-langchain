@@ -111,3 +111,8 @@ chain = setup_and_retrieval | prompt | model | output_parser
 ### Tavily API
 - TavilyはAIエージェント専用に構築された検索エンジン
 - https://note.com/npaka/n/n9fe8a607c56e
+
+
+### OpenGPTs
+- OpenAIのGPTsと類似したものを作りだすオープンソースの取り組み
+- https://github.com/langchain-ai/opengpts

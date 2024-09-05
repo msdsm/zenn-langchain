@@ -152,4 +152,7 @@ chain = setup_and_retrieval | prompt | model | output_parser
   - Example selector : 16/prompt/example-selector/main.py
 
 #### Language models
+- Language modelsの例として以下実装
+  - LLMs : 16/language-model/llm.py
+  - Chat models : 16/language-model/chatmodel.py
 #### Output parsers

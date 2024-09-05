@@ -131,3 +131,25 @@ chain = setup_and_retrieval | prompt | model | output_parser
 - OpenAI社が提供するLLMコンポーネントの評価フレームワーク
 - https://github.com/openai/evals
 - https://qiita.com/Akifumi_Nakamura/items/f51abb811ec367440da9
+
+### LangChain Model I/O
+- 以下のように分類できる
+  - Prompts : プロンプトを管理する機能
+    - Prompt templates : プロンプトをテンプレート化する機能
+    - Example selectors : 大量のデータから選択する機能
+  - Language models : モデルを切り替えたり組み合わせたりする機能
+    - LLMs : LLMモデルの機能
+    - Chat models : チャット機能
+  - Output parsers : 出力のデータ形式を指定するための機能
+- 以下、ソースコードをもとに解説
+
+#### Prompts
+- Prompt templateの例として以下の3種
+  - PromptTemplate : 16/prompt/template/prompt.py
+  - FewShotPromptTemplate : 16/prompt/template/fewshotprompt.py
+  - ChatPromptTemplate : 16/chatprompt.py
+- Example selectorの例は以下
+  - Example selector : 16/prompt/example-selector/main.py
+
+#### Language models
+#### Output parsers

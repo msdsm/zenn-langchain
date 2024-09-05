@@ -103,3 +103,11 @@ chain = setup_and_retrieval | prompt | model | output_parser
   - https://book.st-hakky.com/data-science/langchain-langserve/
 
 ### LangGraph
+- LangChainのツール群に含まれる1つで各LLMエージェントのステップなどをグラフ化して状態管理を行うツール
+- ステートマシンを作成して複数のエージェントが協調して動作するマルチエージェントの構築を容易にすることを目的に開発
+- 以下、単純なグラフの構築例でわかりやすい
+  - https://zenn.dev/pharmax/articles/8796b892eed183
+
+### Tavily API
+- TavilyはAIエージェント専用に構築された検索エンジン
+- https://note.com/npaka/n/n9fe8a607c56e

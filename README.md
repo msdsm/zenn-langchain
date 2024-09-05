@@ -116,3 +116,13 @@ chain = setup_and_retrieval | prompt | model | output_parser
 ### OpenGPTs
 - OpenAIのGPTsと類似したものを作りだすオープンソースの取り組み
 - https://github.com/langchain-ai/opengpts
+
+### LangChain Evaluations
+- LangChainの評価機能
+- Embedding, LLMによって評価する
+- https://github.com/langchain-ai/opengpts
+
+### LangChain Hub
+- prompt template, Chain, Agentなどが上げられている
+  - https://smith.langchain.com/hub
+- pathを指定することで自由にloadして使用可能

@@ -159,3 +159,4 @@ chain = setup_and_retrieval | prompt | model | output_parser
 - Output Parserの例として以下実装
   - List parser : 16/output-parser/list-parser.py
   - Pydantic(JSON) parser : 16/output-parser/pydantic-parser.py
+  - Auto-fixing parser : 16/output-parser/auto-fixing-parser.py

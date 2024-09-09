@@ -180,3 +180,43 @@ chain = setup_and_retrieval | prompt | model | output_parser
   - List parser : 16/output-parser/list-parser.py
   - Pydantic(JSON) parser : 16/output-parser/pydantic-parser.py
   - Auto-fixing parser : 16/output-parser/auto-fixing-parser.py
+
+### LangChain Retrieval
+- 外部データを用いて回答を生成する機能
+- 以下の6つの機能がある
+  - Document loaders
+  - Document transformers
+  - Text embedding models
+  - Vector stores
+  - Retrievers
+  - Indexing
+- 以下例として実装
+  - Document loaders : document-loaders.py
+  - Document transformers : document-transformers.py
+  - Text embedding models : openai-embeddings.py
+  - Vector stores : vector-store.py
+  - Retrievers : retrievers.py
+  - Indexing : elastic-search-store.py
+
+#### Document loaders
+- PDFやCSVなどのデータを読み込むための機能
+
+#### Document transformers
+- 読み込まれた文書やテキストデータを大規模言語モデルが扱いやすい形に変換する機能
+- Document transformersで代表的なモジュールであるText splittersは文章データを分割するための機能
+
+#### Text embedding models
+- 自然言語の文章や単語を数値のベクトルに変換するモデル
+
+#### Vector stores
+- ベクトル化されたデータを管理するための機能
+- 代表的なデータベースとしてchromaDB
+- 今回の例(17/vecotr-store.py)では、VectorStoreIndexCreatorを使用
+- https://api.python.langchain.com/en/latest/indexes/langchain.indexes.vectorstore.VectorStoreIndexWrapper.html#langchain.indexes.vectorstore.VectorStoreIndexWrapper
+
+#### Retrievers
+- ドキュメント検索をするための機能
+- ChatGPT Plugin Retrievers, ElasticSearch BM25やVectorStore Retrieverなど様々なRetrieverがある
+
+#### Indexing
+- 大量のテキストデータを効率よく検索できるように整理・構造化する機能

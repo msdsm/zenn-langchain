@@ -271,6 +271,9 @@ chain = setup_and_retrieval | prompt | model | output_parser
 ### LangChain Callbacks
 - LLMのアプリケーションのロギング、モニタリング、ストリーミングなどを効率的に管理する機能
 - 代表的なコールバックハンドラの各メソッドに対応しているイベントは以下
+
+
+
 | イベント名            | 説明                                    |
 |-----------------------|-----------------------------------------|
 | `on_llm_start`        | LLMの動作開始時                         |
@@ -287,6 +290,9 @@ chain = setup_and_retrieval | prompt | model | output_parser
 | `on_text`             | 任意のテキストが出力された時            |
 | `on_agent_action`     | エージェントアクション時                |
 | `on_agent_finish`     | エージェントの終了時                    |
+
+
+
 - callbacksには以下の3つの機能がある
   - Logging
   - Streaming

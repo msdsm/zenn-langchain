@@ -1,0 +1,10 @@
+
+
+[1m> Entering new LLMChain chain...[0m
+Prompt after formatting:
+[32;1m[1;3m1 + 2 = [0m
+
+[1m> Finished chain.[0m
+[32m2024-09-11 18:01:18.181[0m | [1mINFO    [0m | [36m__main__[0m:[36m<module>[0m:[36m17[0m - [1m3
+
+(This is a very simple example of a language model, but more complex models can perform more complex tasks such as predicting the next word in a sentence or generating text.)[0m

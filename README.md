@@ -267,3 +267,39 @@ chain = setup_and_retrieval | prompt | model | output_parser
 
 #### Agent Executor
 - Agentの行動を実行するための機能
+
+### LangChain Callbacks
+- LLMのアプリケーションのロギング、モニタリング、ストリーミングなどを効率的に管理する機能
+- 代表的なコールバックハンドラの各メソッドに対応しているイベントは以下
+| イベント名            | 説明                                    |
+|-----------------------|-----------------------------------------|
+| `on_llm_start`        | LLMの動作開始時                         |
+| `on_chat_model_start` | チャットモデルの動作開始時               |
+| `on_llm_new_token`    | 新しいLLMトークン時（ストリーミングが有効な場合のみ） |
+| `on_llm_end`          | LLMの動作終了時                         |
+| `on_llm_error`        | LLMでエラーが発生した時                 |
+| `on_chain_start`      | チェーンの動作開始時                    |
+| `on_chain_end`        | チェーンの動作終了時                    |
+| `on_chain_error`      | チェーンでエラーが発生した時            |
+| `on_tool_start`       | ツールの動作開始時                     |
+| `on_tool_end`         | ツールの動作終了時                     |
+| `on_tool_error`       | ツールでエラーが発生した時              |
+| `on_text`             | 任意のテキストが出力された時            |
+| `on_agent_action`     | エージェントアクション時                |
+| `on_agent_finish`     | エージェントの終了時                    |
+- callbacksには以下の3つの機能がある
+  - Logging
+  - Streaming
+  - Token Count
+#### Logging
+- プログラムの実行中に発生するイベントやデータを記録する機能
+- 各イベントをコンソールに出力する`StdOutCallbackHandler`や各イベントをファイルに保存する`FileCallbackHandler`がある
+- `21/logging/stdoutcallbackhandler.py`, `21/logging/filecallbackhandler.py`
+
+#### Streaming
+- リアルタイムでデータを送受信する機能
+- `on_llm_new_token`は新しいトークンが生成されるたびに呼び出され生成されたデータをリアルタイムで受け取れる
+
+#### Token Count
+- トークンカウントは言語モデルで消費されるトークン数を計測する機能
+- トークンとはテキストを最小単位に分割したもの

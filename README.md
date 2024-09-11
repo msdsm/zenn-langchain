@@ -243,3 +243,27 @@ chain = setup_and_retrieval | prompt | model | output_parser
 - Chatの履歴データを管理するための機能
 - ユーザーが送信したチャットメッセージは`add_user_message()`メソッドで追加
 - LLMが生成したメッセージは`add_ai_message()`メソッドで追加
+
+### LangChain Agent
+- 言語モデルに渡されたツールを用いてモデル自体が次にどのようなアクションをとるかを決定、実行、観測して完了するまで繰り返す機能
+- LangChain Agentsの機能は以下の4つ
+  - Tools : `20/tools.py`
+  - Agents : `20/agents.py`
+  - Toolkits : `20/toolkits.py`
+  - Agent Executor : `20/agent-executor.py`
+#### Tools
+- Agentというロボットが外界とやり取りをするための機能
+
+#### Agents
+- プロンプトの内容に応じてツールを使い分け自動で解法を生成するロボットの機能
+- 以下の4種類がある
+  - zero-shot-react-description : ツールの説明文章などからどのツールを用いるかを決めるAgent
+  - react-docstore : 文書を扱うことに特化したAgent
+  - self-ask-with-search : 質問に対する答えを事実に基づいて調べてくれるAgent
+  - conversatioinal-react-description : 会話を扱うことに特化したAgent
+
+#### Toolkits
+- 特定のユースケースに応じてツールを初期搭載したAgentの機能
+
+#### Agent Executor
+- Agentの行動を実行するための機能

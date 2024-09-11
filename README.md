@@ -196,7 +196,7 @@ chain = setup_and_retrieval | prompt | model | output_parser
   - Text embedding models : openai-embeddings.py
   - Vector stores : vector-store.py
   - Retrievers : retrievers.py
-  - Indexing : elastic-search-store.py
+  - Indexing : elastic-search-store.py(windows動かない)
 
 #### Document loaders
 - PDFやCSVなどのデータを読み込むための機能
@@ -220,3 +220,15 @@ chain = setup_and_retrieval | prompt | model | output_parser
 
 #### Indexing
 - 大量のテキストデータを効率よく検索できるように整理・構造化する機能
+
+
+### LangChain Chains
+- 18/simple-chain.py, 18/sequential-chain.py参考
+- simple chainはprompt->llmという処理を実装
+- sequential chainはprompt->llm->prompt->llm
+  - ある生成結果を利用して新しくプロンプトを作成するというもの
+- Custom ChainはChainクラスを継承する形でオリジナルのChainを作成するもの
+  - custom-chain.py動かない
+
+### CoTプロンプティング
+- Chain of Thoughtプロンプティングとは入力を与える際に思考の過程をガイドとして与えることにより、より望んだ出力が得られるようにするプロンプト作成テクニックのこと

@@ -232,3 +232,14 @@ chain = setup_and_retrieval | prompt | model | output_parser
 
 ### CoTプロンプティング
 - Chain of Thoughtプロンプティングとは入力を与える際に思考の過程をガイドとして与えることにより、より望んだ出力が得られるようにするプロンプト作成テクニックのこと
+
+### LangChain Memory
+- ChainやAgentの内部における状態保持をする機能
+- 代表的なものとして以下がある
+  - Chat Message History : `19/chat-message-history.py`
+  - Simple History : `19/simple-history.py`
+  - Buffer Memory : `19/buffer-memory.py`
+#### Chat Message History
+- Chatの履歴データを管理するための機能
+- ユーザーが送信したチャットメッセージは`add_user_message()`メソッドで追加
+- LLMが生成したメッセージは`add_ai_message()`メソッドで追加

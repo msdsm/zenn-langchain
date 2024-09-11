@@ -64,6 +64,30 @@
     - list-parser.py
     - pydantic-parser.py
     - auto-fixing-parser.py
+- 17
+  - document-loaders : Document Loadersの例
+  - document-transformers : Document Transformersの例
+  - openai-embeddings : Text Embedding Modelsの例
+  - vector-store : Vector Storeの例
+  - retrievers : Retrieversの例
+  - indexing : Indexingの例(elastic-search-store)
+- 18
+  - simple-chain.py : simple chain実装
+  - sequential-chain.py : sequential chain実装
+  - custom-chain.py : 自作chain実装
+- 19
+  - chat-message-history.py : Chat Message History実装
+  - simple-history.py : Simple History実装
+  - buffer-memory.py : Buffer Memory実装
+- 20
+  - tools.py : Toolsの実装例
+  - agents.py : Agentsの実装例
+  - toolkits.py : ToolKitsの実装例
+  - agent-executor.py : Agent Executorの実装例
+- 21
+  - logging
+  - streaming
+  - token-count
 
 ## メモ
 
@@ -237,13 +261,18 @@ chain = setup_and_retrieval | prompt | model | output_parser
 - ChainやAgentの内部における状態保持をする機能
 - 代表的なものとして以下がある
   - Chat Message History : `19/chat-message-history.py`
-  - Simple History : `19/simple-history.py`
+  - Simple Memory : `19/simple-memory.py`
   - Buffer Memory : `19/buffer-memory.py`
 #### Chat Message History
 - Chatの履歴データを管理するための機能
 - ユーザーが送信したチャットメッセージは`add_user_message()`メソッドで追加
 - LLMが生成したメッセージは`add_ai_message()`メソッドで追加
-
+#### Simple Memory
+- Chain上で最初に設定できる共有メモリの機能
+- 時間や場所などの前提情報を格納できる
+#### Buffer Memory
+- ChainsやAgents間で履歴データを共有するためのメモリ機能
+- Buffer Memoryを使用することでチャットを実行するたびに履歴データが自動的に更新される
 ### LangChain Agent
 - 言語モデルに渡されたツールを用いてモデル自体が次にどのようなアクションをとるかを決定、実行、観測して完了するまで繰り返す機能
 - LangChain Agentsの機能は以下の4つ

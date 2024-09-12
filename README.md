@@ -357,3 +357,22 @@ index = VectorstoreIndexCreator(
 - `pip install unstructured`
 - Document Loadersの1種
 - URLを読み込めるようになる
+```python
+urls = [
+    "https://zenn.dev/umi_mori/articles/what-is-gpt-4",
+    "https://zenn.dev/umi_mori/articles/chatgpt-api-python",
+    "https://zenn.dev/umi_mori/articles/chatgpt-google-chrome-plugins",
+]
+loader = UnstructuredURLLoader(urls=urls)
+text_splitter = CharacterTextSplitter(
+    separator = "\n",
+    chunk_size = 300,
+    chunk_overlap = 0,
+    length_function = len,
+)
+index = VectorstoreIndexCreator(
+    vectorstore_cls=Chroma,
+    embedding=OpenAIEmbeddings(),
+    text_splitter=text_splitter,
+).from_loaders([loader])
+```

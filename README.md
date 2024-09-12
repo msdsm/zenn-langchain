@@ -352,3 +352,8 @@ index = VectorstoreIndexCreator(
 ).from_loaders([loader])
 ```
 - これで普通のdocument loaderの時と同じくベクトル検索が可能
+
+### UnstructuredURLLoader
+- `pip install unstructured`
+- Document Loadersの1種
+- URLを読み込めるようになる

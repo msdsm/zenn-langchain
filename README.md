@@ -338,3 +338,17 @@ chain = setup_and_retrieval | prompt | model | output_parser
 #### Token Count
 - トークンカウントは言語モデルで消費されるトークン数を計測する機能
 - トークンとはテキストを最小単位に分割したもの
+
+### YouTube Transcript API
+- `pip install youtube-transcript-api`
+- YouTube動画の字幕を取得できる
+- LangChainのDocument Loadersの中にYouTubeLoaderがあり、それを使って字幕情報取得する
+```python
+youtube_url = "https://www.youtube.com/watch?v=7tPMqrAoFAQ"
+loader = YoutubeLoader.from_youtube_url(youtube_url)
+index = VectorstoreIndexCreator(
+    vectorstore_cls=Chroma,
+    embedding=OpenAIEmbeddings(disallowed_special=()),
+).from_loaders([loader])
+```
+- これで普通のdocument loaderの時と同じくベクトル検索が可能

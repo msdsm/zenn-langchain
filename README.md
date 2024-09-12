@@ -376,3 +376,30 @@ index = VectorstoreIndexCreator(
     text_splitter=text_splitter,
 ).from_loaders([loader])
 ```
+
+### Git Loader
+- GitHubのリポジトリに対してベクトル検索できるようになる
+- 以下は例としてLangChainのリポジトリを読み込んでいる
+- `pip install GitPython`
+```python
+from langchain_community.document_loaders import GitLoader
+clone_url = "https://github.com/hwchase17/langchain"
+branch = "master"
+repo_path = "./temp/"
+filter_ext = ".py"
+
+if os.path.exists(repo_path):
+    clone_url = None
+
+loader = GitLoader(
+    clone_url=clone_url,
+    branch=branch,
+    repo_path=repo_path,
+    file_filter=lambda file_path: file_path.endswith(filter_ext),
+)
+
+index = VectorstoreIndexCreator(
+    vectorstore_cls=Chroma, # Default
+    embedding=OpenAIEmbeddings(disallowed_special=()), # Default
+).from_loaders([loader])
+```

@@ -88,6 +88,30 @@
   - logging
   - streaming
   - token-count
+- 22
+  - main.py : チャットウェブアプリ
+- 23
+  - main.py : YouTube動画のDataLoader
+- 24
+  - main.py : WebページのDataLoader
+- 25
+  - main.py : PDFのDataLoader
+- 26
+  - main.py : GitHubのDataLoader
+- 27
+  - main.py : 演算機能を搭載
+- 28
+  - main.py : ウェブ検索機能を搭載(Google API)
+- 30
+  - main.py : DuckDuckGo API
+- 31
+  - main.py : PandasのDataFrameを検索するAgent
+- 32
+  - main.py : SQLクエリを生成するAgent
+- 33
+  - main.py : 出力の根拠を得るChain
+
+
 
 ## メモ
 
